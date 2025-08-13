@@ -1,0 +1,18 @@
+{
+  "name": "admindashborad",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Frontend": "cd Frontend && npm run dev",
+    "BackEnd": "cd BackEnd && npx nodemon MainBackEndFile.js",
+  "dev": "concurrently -n \"Frontend,BackEnd\" -c \"bgBlue,bgYellow\" \"npm run Frontend\" \"npm run BackEnd\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.2.0"
+  }
+}

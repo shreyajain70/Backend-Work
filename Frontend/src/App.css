@@ -1,0 +1,604 @@
+/* Header CSS */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  gap: 20px;
+}
+
+/* Logo */
+.logo img {
+  height: 100px;
+}
+
+/* Search bar styling */
+.search-bar {
+  flex: 1; /* Makes it take up space in center */
+  display: flex;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-buttons button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Footer CSS*/
+
+.footer {
+  background-color: #1e1e1e;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 32px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-logo {
+  color: #ff6600;
+  margin-bottom: 8px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #ff6600;
+}
+
+.footer-section p, 
+.footer-section ul {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 6px;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6600;
+}
+
+/* Social Icons */
+.footer-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.footer-socials a {
+  color: white;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #ff6600;
+}
+
+/* Footer Button */
+.footer-button {
+  margin-top: 12px;
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+  background-color: #e55a00;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+
+/* Admin Dashboard CSS */
+
+.admin-dashboard {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f8f9fc;
+  min-height: 100vh;
+}
+
+/* Top heading and profile image row */
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header-profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.admin-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.admin-profile {
+  background-color: #e6ecf5;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  width: 50%;
+}
+
+.profile-img {
+  width: 300px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  margin-left: 50px;
+}
+
+.update-profile-btn {
+  padding: 10px 15px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.admin-main {
+  display: flex;
+  gap: 20px;
+}
+
+.admin-actions {
+  background-color: #e6ecf5;
+  padding: 50px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+  text-align: center;
+}
+
+.admin-btn {
+  background-color: #000;
+  margin: 0 auto;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 50%;
+}
+
+.admin-btn:hover {
+  background-color: #333;
+}
+
+.admin-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.stat-card {
+  background-color: #e6ecf5;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat-card p {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #444;
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
+/* Add New Product CSS */
+/* ---- Base / Reset ---- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0b0f14;
+  --panel: #0e1621;
+  --panel-2: #111a27;
+  --text: #e6eefc;
+  --muted: #9bb0d0;
+  --primary: #3b82f6;   /* blue-500 */
+  --primary-600: #2563eb; /* blue-600 */
+  --primary-700: #1d4ed8; /* blue-700 */
+  --ring: rgba(59,130,246,0.35);
+  --success: #22c55e;
+  --error: #ef4444;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+html, body {
+  height: 100%;
+  background: radial-gradient(1200px 800px at 20% -10%, rgba(59,130,246,0.08), transparent 60%),
+              radial-gradient(1000px 700px at 120% 20%, rgba(29,78,216,0.08), transparent 60%),
+              var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ---- Form Container ---- */
+.add-product-form {
+  width: 100%;
+  max-width: 560px;
+  margin: clamp(24px, 6vh, 64px) auto;
+  padding: 28px;
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid rgba(148,163,184,0.12);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(4px);
+  position: relative;
+  overflow: hidden;
+}
+
+.add-product-form::after {
+  /* subtle top highlight */
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(59,130,246,0.6), transparent);
+  pointer-events: none;
+}
+
+/* ---- Title ---- */
+.add-product-form h1 {
+  margin: 0 0 18px;
+  font-size: clamp(22px, 2.2vw, 28px);
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, #cde4ff, #7fb4ff, #cde4ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---- Labels ---- */
+.add-product-form label {
+  display: block;
+  margin: 14px 0 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---- Inputs ---- */
+.add-product-form input[type="text"],
+.add-product-form input[type="number"],
+.add-product-form input[type="file"] {
+  width: 100%;
+  display: block;
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(148,163,184,0.18);
+  background: #0b1220;
+  color: var(--text);
+  outline: none;
+  transition: border-color .18s ease, box-shadow .18s ease, transform .04s ease;
+}
+
+/* nice focus ring */
+.add-product-form input[type="text"]:focus,
+.add-product-form input[type="number"]:focus,
+.add-product-form input[type="file"]:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+/* micro interaction */
+.add-product-form input[type="text"]:active,
+.add-product-form input[type="number"]:active,
+.add-product-form input[type="file"]:active {
+  transform: scale(0.998);
+}
+
+/* ---- File input button styling (Chromium/Edge/Firefox) ---- */
+.add-product-form input[type="file"]::-webkit-file-upload-button {
+  padding: 10px 12px;
+  margin-right: 10px;
+  border: 1px solid rgba(148,163,184,0.2);
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--primary), var(--primary-600));
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter .18s ease, transform .04s ease;
+}
+.add-product-form input[type="file"]::file-selector-button {
+  padding: 10px 12px;
+  margin-right: 10px;
+  border: 1px solid rgba(148,163,184,0.2);
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--primary), var(--primary-600));
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter .18s ease, transform .04s ease;
+}
+.add-product-form input[type="file"]::-webkit-file-upload-button:hover,
+.add-product-form input[type="file"]::file-selector-button:hover {
+  filter: brightness(1.06);
+}
+.add-product-form input[type="file"]::-webkit-file-upload-button:active,
+.add-product-form input[type="file"]::file-selector-button:active {
+  transform: translateY(1px);
+}
+
+/* ---- Button ---- */
+.add-product-form button[type="submit"] {
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px 16px;
+  border: 0;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  background: linear-gradient(90deg, var(--primary), var(--primary-600), var(--primary-700));
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+  transition: transform .08s ease, box-shadow .18s ease, filter .18s ease;
+}
+
+.add-product-form button[type="submit"]:hover {
+  filter: brightness(1.05);
+  box-shadow: 0 10px 26px rgba(37,99,235,0.45);
+}
+
+.add-product-form button[type="submit"]:active {
+  transform: translateY(1px);
+  box-shadow: 0 6px 16px rgba(37,99,235,0.35);
+}
+
+.add-product-form button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ---- Status Message ---- */
+.add-product-form p {
+  margin: 12px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* If you add classNames dynamically, you can use these: */
+/* .status--success { color: var(--success); }
+   .status--error { color: var(--error); } */
+
+/* ---- Spacing for <br /><br /> in your JSX ---- */
+.add-product-form br {
+  line-height: 10px;
+}
+
+/* ---- Responsive tweaks ---- */
+@media (max-width: 480px) {
+  .add-product-form {
+    padding: 20px;
+    border-radius: 16px;
+  }
+  .add-product-form h1 {
+    font-size: 22px;
+  }
+}
+
+
+/* Home CSS */
+
+/* Main product page container */
+.product-page {
+  padding: 20px;
+  background-color: #f0f4f8; /* Soft, neutral background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Page title */
+.page-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50; /* Deep blue-gray for a strong header */
+  letter-spacing: 1.5px;
+}
+
+/* Grid layout for products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Product card styling */
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(44, 62, 80, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e1e8ee;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(44, 62, 80, 0.2);
+}
+
+/* Image wrapper */
+.image-wrapper {
+  background-color: #f9fafc; /* Very light blue-gray */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-bottom: 1px solid #e1e8ee;
+}
+
+/* Product image */
+.product-image {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Product info section */
+.product-info {
+  padding: 20px 18px;
+  color: #34495e; /* Soft dark color for text */
+}
+
+.product-info h2 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.product-info p {
+  font-size: 0.95rem;
+  color: #566573; /* Muted blue-gray for description */
+  margin-bottom: 14px;
+  line-height: 1.4;
+}
+
+.price {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #e67e22; /* Vibrant orange accent for price */
+  margin-bottom: 18px;
+}
+
+/* Buy button */
+.buy-btn {
+  background: linear-gradient(45deg, #2980b9, #6dd5fa);
+  color: white;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(41, 128, 185, 0.4);
+  transition: background 0.4s ease, box-shadow 0.3s ease;
+  font-weight: 600;
+}
+
+.buy-btn:hover {
+  background: linear-gradient(45deg, #6dd5fa, #2980b9);
+  box-shadow: 0 8px 20px rgba(41, 128, 185, 0.6);
+}
