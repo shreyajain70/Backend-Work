@@ -2,12 +2,13 @@ const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
 const path = require("path");
-
+const Razorpay = require("razorpay")
 const ConnectedDB = require("./LinkDatabase");
 const ImageSave = require("./SellerSchema");
 
 const cloudinary = require("cloudinary").v2;
 const { CloudinaryStorage } = require("multer-storage-cloudinary");
+
 
 const app = express();
 app.use(cors());
@@ -80,6 +81,31 @@ app.get("/PostedProducts", async (req, res) => {
     res.status(500).json({ error: "Failed to fetch products" });
   }
 });
+
+
+// Payment Post Integration
+
+const razorPay = new Razorpay({
+  key_id:"rzp_test_R5AAl5ZdPJ2r4d",
+  key_secret:"ZAO3Ov23SSid5SS0kpm3EWky"
+})
+
+app.post("/create-order", async(req,res)=>{
+const {amount} = req.body;
+const Options = {
+  amount: amount,
+  currency: "INR",
+  receipt: "order_rcptid_11"
+};
+try{
+  const order = await razorPay.orders.create(Options);
+  res.json(order)
+}
+catch(err){
+res.status(500).send(err)
+}
+})
+
 
 const PORT = 5000;
 app.listen(PORT, () => {
